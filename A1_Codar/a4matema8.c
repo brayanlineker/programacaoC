@@ -1,19 +1,21 @@
 #include <stdio.h>
 
-int main() {
+int main () {
 
-    int idade;
+    int nota;
 
-printf("Digite sua idade: ");
-    scanf("%d", &idade);
+    printf("*** Chegou a hora da nota final ***\n");
+    printf("Digite sua nota: \n");
+    scanf("%d", &nota);
 
-    if ( idade < 12 ) {
-        printf("Vc é menor de idade!\n");
-    } else if ( idade >= 12 && idade < 18) {
-        printf("Vc é adolescente!\n");
-    } else if ( idade >= 18 && idade < 60) {
-        printf("Vc é adulto!\n");
+    if (nota >= 70){
+        printf("Parabéns! Vc foi aprovado!\n");
+    } else if (nota >= 60){
+        printf("Vc fará a prova novamente!\n");
+    } else if (nota >= 50){
+        printf("Vc está em recuperação!\n");
     } else {
-        printf("Vc é idoso!");
+        printf("Vc foi reprovado!\n");
     }
-    }
+
+}
